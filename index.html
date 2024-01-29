@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Internet Quiz</h5>
+        <div class="loading">Loading...</div>
+        <div id="qa" style="display: none"></div>
+          <form id="quizForm">
+            <div class="form-group">
+              <label for="answer" id="question"></label>
+              <input type="text" class="form-control" id="answer" placeholder="Answer">
+              <small id="timer" class="form-text text-muted">30 sec left</small>
+            </div>
+            <button id="submit" type="button" disabled class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
